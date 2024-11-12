@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 1rem;
+
+    &:hover .main__tooltip {
+      transition: all 200ms ease-in-out;
+      opacity: 1;
+    }
+  }
+
+  &__tooltip {
+    font-size: 20px;
+    padding: 1rem;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    border-radius: 10px;
+    width: 6rem;
+    text-align: center;
+    opacity: 0;
+  }
+}
